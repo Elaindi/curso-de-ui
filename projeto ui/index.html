@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wireframe One Page</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #ffffff;
+      padding: 20px 10%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #e6e6e6;
+      padding: 20px;
+    }
+
+    .hero-image {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      opacity: 0.35;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 700px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    .btn {
+      background: #333;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #555;
+    }
+
+    section {
+      padding: 80px 10%;
+      background: white;
+      margin-bottom: 10px;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+      font-size: 32px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: #f7f7f7;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+
+    .testimonial {
+      background: #f1f1f1;
+      padding: 20px;
+      border-left: 5px solid #333;
+      margin-bottom: 20px;
+    }
+
+    .cta {
+      text-align: center;
+      background: #333;
+      color: white;
+      padding: 80px 20px;
+    }
+
+    .cta h2 {
+      margin-bottom: 20px;
+      font-size: 36px;
+    }
+
+    footer {
+      background: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Afro Hair Institut</div>
+
+    <nav>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?q=80&w=1400&auto=format&fit=crop" alt="Salão de beleza" class="hero-image">
+    <div class="hero-content">
+      <h1>Transforme Sua Beleza Natural</h1>
+      <p>
+        Especialistas em cabelos crespos, cacheados, colorimetria e tratamentos personalizados.
+      </p>
+      <a href="#contato" class="btn">Agendar Agora</a>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <h2 class="section-title">Sobre o Produto</h2>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=800&auto=format&fit=crop" alt="Atendimento especializado" style="width:100%; border-radius:10px; margin-bottom:15px;">
+        <h3>Atendimento Especializado</h3>
+        <p>Experiência completa para todos os tipos de cabelo.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo
+        <p>Técnicas modernas para loiros, mechas e correção de cor.</p>
+      </div>
+
+      <div class="card">
+        <h3>Inclusão e Cuidado</h3>
+        <p>Atendimento acolhedor para crianças com TEA.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="beneficios">
+    <h2 class="section-title">Benefícios</h2>
+
+    <div class="cards">
+      <div class="card">
+        <h3>Profissionais Qualificados</h3>
+      </div>
+
+      <div class="card">
+        <h3>Ambiente Moderno</h3>
+      </div>
+
+      <div class="card">
+        <h3>Produtos de Qualidade</h3>
+      </div>
+
+      <div class="card">
+        <h3>Atendimento Humanizado</h3>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos">
+    <h2 class="section-title">Depoimentos</h2>
+
+    <div class="testimonial">
+      <p>
+        “Meu cabelo nunca ficou tão saudável e bonito. Atendimento incrível!”
+      </p>
+    </div>
+
+    <div class="testimonial">
+      <p>
+        “A paciência e carinho com minha filha autista fizeram toda diferença.”
+      </p>
+    </div>
+  </section>
+
+  <section class="cta" id="contato">
+    <h2>Pronta para transformar seu visual?</h2>
+    <a href="#" class="btn">Entrar em Contato</a>
+  </section>
+
+  <footer>
+    <p>© 2026 Afro Hair Institut - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
